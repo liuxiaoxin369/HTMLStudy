@@ -1,0 +1,12 @@
+.x-panel-content .x-navbox span{
+	display:inline-block;
+	padding:7px;
+	border:1px solid #aaa;
+	border-radius:5px;
+	color:#aaa;
+	margin-left:7px;
+}
+ 
+.btnColor{
+	color:red;
+}

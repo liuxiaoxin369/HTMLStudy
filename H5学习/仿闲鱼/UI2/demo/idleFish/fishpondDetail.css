@@ -1,0 +1,12 @@
+.x-titlebar{ background-color:rgba(0, 0, 0, 0.05);}
+.x-panel-top {
+	z-index : 100;
+}
+.o-relative{ position:relative;}
+
+.x-panel >.x-panel-content{
+	top:0 !important;
+}
+.active-btn{
+	background-color:#FFDA44;
+}

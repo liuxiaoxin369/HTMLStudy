@@ -1,0 +1,3 @@
+.btn-change:active, .btn-change.active{
+	border-bottom-style:solid;border-bottom-width:medium;border-bottom-color:#000040;
+}

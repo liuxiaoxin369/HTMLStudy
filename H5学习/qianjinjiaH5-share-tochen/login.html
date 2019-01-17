@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>邀请好友</title>
+		<!--下面6行表明是用H5来写的-->
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+
+		<link rel="stylesheet" type="text/css" href="./index.css" />
+	</head>
+
+	<body>
+		<header class="header"></header>
+		<div class="user-login">
+			<form method="post" id="signup-user-form" class="index_regform">
+				<div class="index_refitem">
+					<input id="mobile" placeholder="请输入手机号" type="tel" name="mobile" maxlength="13" oninput="if(value.length>13)value=value.slice(0,13)" onpaste="return false" >
+					<div class="tip_1 output">
+
+					</div>
+				</div>
+				<div class="index_refitem">
+					<input id="passCode" placeholder="请输入验证码" type="number" name="mobile_verify" oninput="if(value.length>6)value=value.slice(0,6)" >
+					<input type="button" id="btnSendCode" value="获取验证码" />
+					<div class="tip_2">
+
+					</div>
+					<div class="popup popup1">手机号不能为空！</div>
+					<div class="popup popup2">手机号输入有误！</div>
+					<div class="popup popup3">验证码不能为空！</div>
+				</div>
+				<div class="index_refitem">
+					<input id="password" type="password" name="password" placeholder="请设置6-20位数字和字母登录密码" oninput="if(value.length>20)value=value.slice(0,20)" onKeyUp="value=value.replace(/[\W]/g,'')" >
+					<div class="tip_3">
+
+					</div>
+				</div>
+				<div class="index_refitem">
+					<input id="re_password" type="password" name="re_password" placeholder="确认密码" oninput="if(value.length>20)value=value.slice(0,20)" onKeyUp="value=value.replace(/[\W]/g,'')" >
+					<div class="tip_4">
+
+					</div>
+				</div>
+				<input style="display:none;" id="user_type" type="text" name="user_type" value="1">
+				<div class="index_refitem">
+					<input type="button" id="signup-submit" name="commit" value="">
+				</div>
+				<div class="popup popup4">该手机号重复注册！</div>
+				<div class="popup popup5">验证码不对！</div>
+				<div class="popup popup6">验证码已过期！</div>
+				<div class="popup popup7">两次密码不一致！</div>
+				<div class="agreement">
+					<span>注册代表同意</span>
+					<a id="privacy" data-reveal-id="myModal" data-animation="fade" href="http://192.168.1.163:81/public/agreement.html">《用户使用协议》</a>
+				</div>
+			</form>
+		</div>
+		<div class="center-text">
+			<p>为什么选择钱进家</p>
+			<p>钱进家理财，指尖理财，您的专属财富专家</p>
+		</div>
+		<div class="footer">
+			<ul>
+				<li>
+					<p>安全兑付</p>
+					<p>严格的风险措施，资金账户专款专用，信息数据多重备份。</p>
+				</li>
+				<li>
+					<p>高收益</p>
+					<p>收益高风险低</p>
+				</li>
+				<li>
+					<p>更便捷</p>
+					<p>动动手指，下载APP手机随身赚钱</p>
+				</li>
+			</ul>
+		</div>
+	
+	<script type="text/javascript" src="./jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="./common.js"></script>
+	<script type="text/javascript" src="./index.js"></script>
+	</body>
+</html>
